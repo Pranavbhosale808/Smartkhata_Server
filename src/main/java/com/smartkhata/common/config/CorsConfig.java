@@ -16,7 +16,8 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         config.setAllowedOrigins(List.of(
-                "http://localhost:5173"
+                "http://localhost:5173",
+                "https://smart-khata-ochre.vercel.app/"
         ));
         config.setAllowedHeaders(List.of(
                 "Authorization",
