@@ -11,7 +11,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-
+@CrossOrigin(
+    origins = "https://smart-khata-ochre.vercel.app",
+    methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS},
+    allowedHeaders = "*",
+    allowCredentials = "true"
+)
 @RestController
 @RequestMapping("/api/bills")
 @RequiredArgsConstructor
